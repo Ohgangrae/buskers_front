@@ -125,7 +125,7 @@ li{
 }
 
 /* 검정 - 만들기 */
-:after{
+/* :after{
     content: "";
     display: block;
     width: 24px;
@@ -135,7 +135,7 @@ li{
     top: 40px;
     left: 50%;
     transform: translate(-50%, 0);
-}
+} */
 
 .image-plus-box{
     margin: 0;
@@ -298,11 +298,11 @@ li{
     border-bottom: 1px solid #ddd;
     width: 100%;
     min-width: 1300px;
-    overflow: hidden;
 }
 
 .big-box-title{
     height: 207px;
+    text-align: center;
 }
 
 .big-box-5-poster{
@@ -312,7 +312,26 @@ li{
 }
 
 
+.poster-list{
+    height: 515px;
+    top: 0;
+    left: 50%;
+    text-align: center;
+}
 
+.big-box-5-poster img{
+    
+}
+
+a{
+    /* 밑줄제거 */
+    text-decoration: none;
+}
+
+
+.poster-list-1{
+    padding-top: 10px;
+}
 
 
 
