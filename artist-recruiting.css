@@ -1,0 +1,620 @@
+/* title */
+
+.content-min-wrap {
+    min-width: 1300px;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.big-title {
+    font-size: 45px;
+    text-align: center;
+    color: #333;
+    padding: 90px 0 60px 0;
+    font-family: 'Noto Sans KR', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 공지사항 리스트 */
+
+input, select, textarea, div, p, span {
+    outline: none;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+    /* font: inherit; */
+    font-style: normal;
+    vertical-align: baseline;
+    font-family: 'NanumBarunGothic', '���� ����', 'Malgun Gothic', sans-serif;
+}
+
+
+div {
+    display: block;
+}
+
+.noti-tbl {
+    width: 1200px;
+    margin: 0 auto 37px auto;
+    border-bottom: 1px solid #999;
+}
+
+body {
+    line-height: 1;
+    font-weight: 400;
+}
+
+.noti-tbl table {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+colgroup {
+    display: table-column-group;
+}
+
+col[Attributes Style] {
+    width: 13%;
+}
+
+.noti-tbl td {
+    font-size: 14px;
+    color: #333;
+    border-top: 1px solid #ddd;
+    min-height: 22px;
+    padding: 19px 0 17px 0;
+    vertical-align: middle;
+}
+
+col {
+    display: table-column;
+}
+
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.noti-tbl th {
+    height: 49px;
+    line-height: 49px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    background: #f6f6f6;
+    border-top: 2px solid #333;
+}
+
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.noti-tbl td:nth-child(2) a {
+    display: table;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    padding-right: 10px;
+}
+
+a {
+    font-size: 0;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+input[type="hidden" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    display: none !important;
+    padding: initial;
+    border: initial;
+}
+
+
+input {
+    writing-mode: horizontal-tb !important;
+    font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.noti-tbl td:nth-child(1) {
+    text-align: center;
+}
+
+.noti-tbl td:nth-child(2) a em {
+    display: table-cell;
+    min-width: 71px;
+    vertical-align: middle;
+}
+
+.noti-tbl td:nth-child(2) a {
+    display: table;
+    font-size: 14px;
+    color: #333;
+    line-height: 22px;
+    padding-right: 10px;
+}
+
+.noti-tbl td:nth-child(4) {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* paging */
+
+
+.list-pagenation {
+    text-align: center;
+    padding-top: 35px;
+}
+.list-pagenation a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 15px;
+    color: #666;
+    margin: 0 3px;
+    border: 1px solid #ddd;
+}
+.list-pagenation a img {
+    vertical-align: middle;
+}
+.list-pagenation div {
+    display: inline-block;
+    margin: 0 14px;
+}
+.list-pagenation a.on {
+    border: 1px solid #333;
+    color: #333;
+}
+
+
+
+
+.noti-tbl{width:1200px;margin:0 auto 37px auto;border-bottom:1px solid #999;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: inherit;
+	/*font:inherit;*/
+	font-style: normal;
+	vertical-align: baseline;
+	font-family:'NanumBarunGothic', '���� ����', 'Malgun Gothic', sans-serif;
+}
+
+
+
+element.style {
+    margin-right: 145px;
+    margin-left: 145px;
+}
+
+
+
+
+
+
+<!--모집 공고 상단 배너-->
+
+.notice-slide {
+    width: 1207px;
+    margin: 0 auto 76px auto;
+    position: relative;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+element.style {
+    display: block;
+    text-align: center;
+    font-size: 0px;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+}
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+element.style {
+    margin-left: 0px;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.ticketo .swiper-slide {
+    width: 222px !important;
+    height: 400px !important;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.ticketo .swiper-slide a {
+    display: block;
+    width: 220px;
+    height: 400px;
+}
+a {
+    font-size: 0;
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+.swiper-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+style attribute {
+    display: block;
+    text-align: center;
+    font-size: 0px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.swiper-slide {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+}
+
+
+
+.ticketo .swiper-slide img {
+    display: block;
+    width: 220px;
+    height: 308px;
+}
+.ticketo .swiper-slide .donut-area {
+    width: 220px;
+    height: 308px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.donut-dday {
+    width: 111px;
+    height: 111px;
+    line-height: 111px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 101px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.ticketo .swiper-slide .ticket-txt {
+    height: 90px;
+    position: relative;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.ticketo .swiper-slide .ticket-tail {
+    position: absolute;
+    left: 2px;
+    bottom: 78px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+element.style {
+    margin-left: 12px;
+    margin-right: 12px;
+    display: inline-block;
+}
+
+.ticketo .swiper-slide {
+    width: 222px !important;
+    height: 400px !important;
+    border: 1px solid #ebebeb;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+element.style {
+    display: block;
+    overflow: hidden;
+    border: 0px;
+    margin: 0px;
+    inset: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+}
+
+iframe {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+
+element.style {
+    display: block;
+    height: 220px;
+    width: 220px;
+}
+
+.donut {
+    width: 130px !important;
+    height: 130px !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.donut-dday.today {
+    color: #ed8844;
+}
+.donut-dday {
+    width: 111px;
+    height: 111px;
+    line-height: 111px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 50%;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 101px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.ticketo .swiper-slide .ticket-txt {
+    height: 90px;
+    position: relative;
+    text-align: center;
+    padding: 0 15px;
+}
+.ticketo .swiper-slide .ticket-txt .ticket-date {
+    font-size: 15px;
+    color: #ec7d2c;
+    padding: 15px 0 26px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.ticketo .swiper-slide .ticket-txt .ticket-tit {
+    font-size: 15px;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ticketo .swiper-slide .ticket-txt:after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: #111;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.ticketo .swiper-slide .ticket-tail {
+    position: absolute;
+    left: 2px;
+    bottom: 78px;
+}
+.ticketo .swiper-slide .ticket-tail span.re {
+    background: url(http://tkfile.yes24.com/imgNew/main/ticket-tail2.png)no-repeat;
+}
+
+.ticketo .swiper-slide .ticket-tail span {
+    display: inline-block;
+    width: 48px;
+    height: 27px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 7px;
+    margin-left: 5px;
+}
+
+element.style {
+    margin-left: 12px;
+    margin-right: 0px;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
