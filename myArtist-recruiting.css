@@ -195,3 +195,17 @@ a em {
     display: inline-block;
     margin: 0 14px;
 }
+.paging{
+    margin-bottom: 50px;
+}
+/* 검색창 눌렀을때 아웃라인 없애기 */
+.search-outline{
+    outline: none;
+}
+.search-outline a{
+    display: inline-block;
+    width: 50px;
+    height: 41px;
+    background: url(http://tkfile.yes24.com/imgNew/common/pf-srch-w.png)no-repeat center center;
+    vertical-align: top;
+}
