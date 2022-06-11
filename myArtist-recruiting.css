@@ -213,7 +213,12 @@ a em {
 }
 
 
-.moveTopBtn {
+
+
+
+
+
+/* .moveTopBtn {
     animation-name: rtt;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -231,3 +236,60 @@ a em {
     z-index: 1;
 }
 
+
+* {
+    user-select: none;
+  }
+  
+  .list > div {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  
+  .moveTopBtn {
+    width: 4rem;
+    height: 4rem;
+    background: #000;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .2s;
+    color: #fff;
+  } */
+  
+  /* .moveTopBtn:hover {
+    color: #000;
+    background: #febf00;
+  } */
+
+img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+    font-style: normal;
+    vertical-align: baseline;
+    font-family: 'NanumBarunGothic', '���� ����', 'Malgun Gothic', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+
+body {
+    line-height: 1;
+    font-weight: 400;
+}

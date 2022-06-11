@@ -7,15 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="myArtist-recruiting.css">
 </head>
-
-<script>
-    const $topBtn = document.querySelector(".moveTopBtn");
-
-    // 버튼 클릭 시 맨 위로 이동
-    $topBtn.onclick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });  
-}
-</script>
 <body>
 
     <!-- 아티스트 모집공고 -->
@@ -402,11 +393,44 @@
         </div>
     
     </div>
-    <a href="#" class="moveTopBtn">
+    <!-- <a href="#" class="moveTopBtn"> -->
+        <a href="#" class="return-top"></a>
         <img src="return-top.png" alt="">
+        <!-- <div class="moveTopBtn">↑</div> -->
     </a>
-
+    
 
     
 </body>
+
+<!-- 맨위로 올리는 버튼 -->
+<script>
+    // const $topBtn = document.querySelector(".moveTopBtn");
+
+// 버튼 클릭 시 맨 위로 이동
+// $topBtn.onclick = () => {
+//   window.scrollTo({ top: 0, behavior: "smooth" });  
+// }
+
+
+
+//위로 올라가는 버튼 클릭하면
+$(".return-top").on('click',function(e){
+		e.preventDefault();
+		$(window).scrollTop(0);
+	});
+
+//위로 올라가는 버튼 나타나게
+		if(sctop>0){
+			$(".return-top").addClass("on");
+		}else{
+			$(".return-top").removeClass("on");
+		}
+
+
+
+
+
+</script>
+
 </html>

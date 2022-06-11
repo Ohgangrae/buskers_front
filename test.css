@@ -1,0 +1,30 @@
+* {
+    user-select: none;
+  }
+  
+  .list > div {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+  }
+  
+  .moveTopBtn {
+    width: 4rem;
+    height: 4rem;
+    background: #000;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .2s;
+    color: #fff;
+  }
+  
+  .moveTopBtn:hover {
+    color: #000;
+    background: #febf00;
+  }
