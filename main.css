@@ -256,7 +256,7 @@ li{
     margin-bottom: 25px;
 }
 
-.youtube-box .youtube-text-video-box .youtube-text-box .youtube-text-top span:after{
+/* .youtube-box .youtube-text-video-box .youtube-text-box .youtube-text-top span:after{
     content: "";
     display: block;
     position: absolute;
@@ -266,7 +266,7 @@ li{
     background: #ec7d2c;
     bottom: -12px;
     transition: all 1s;
-}
+} */
 
 .youtube-text-mid a{
     font-family: 'Noto Sans KR', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
@@ -276,6 +276,16 @@ li{
     font-weight: 700;
     line-height: 60px;
     margin-bottom: 25px;
+}
+.youtube-text-ㅡ{
+    font-family: 'Noto Sans KR', 'NanumBarunGothic', '맑은 고딕', 'Malgun Gothic', sans-serif;
+    letter-spacing: -0.059em;
+    font-size: 50px;
+    color: #ec7d2c;
+    font-weight: 700;
+    line-height: 60px;
+    margin: 0;
+    
 }
 
 .youtube-text-bottom{
@@ -313,16 +323,23 @@ li{
 
 
 .poster-list{
-    height: 515px;
+    height: 490px;
     top: 0;
     left: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
 }
 
 .big-box-5-poster img{
-    
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 a{
@@ -340,8 +357,28 @@ a{
 }
 .poster-title{
     padding-top: 90px;
+    
+    
+}
+p{
+    margin:0;
 }
 
+.poster-list-text{
+    padding-top: 15px;
+}
+
+@media screen and (max-width: 1919px) {
+    .poster-list-1 {
+    width: 14.06vw;
+}
+}
+
+@media screen and (max-width: 1300px) {
+.poster-list-1 {
+    width: 185px;
+}
+}
 
 
 
