@@ -7,6 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="myArtist-recruiting.css">
 </head>
+
+<script>
+    const $topBtn = document.querySelector(".moveTopBtn");
+
+    // 버튼 클릭 시 맨 위로 이동
+    $topBtn.onclick = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });  
+}
+</script>
 <body>
 
     <!-- 아티스트 모집공고 -->
@@ -64,6 +73,7 @@
         <div class="search-box">
             <input class="search-outline" type="text" placeholder="궁금하신 내용을 입력해주세요" autocomplete="off">
             <a onclick="jsf_notice_Search();" style="cursor: pointer"></a>
+            <img src="Magnifier.png" alt="">
         </div>
     </div>
     <div class="board-list">
@@ -392,6 +402,9 @@
         </div>
     
     </div>
+    <a href="#" class="moveTopBtn">
+        <img src="return-top.png" alt="">
+    </a>
 
 
     

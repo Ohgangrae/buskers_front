@@ -77,6 +77,8 @@ p {
     border: 1px solid #333;
     font-size: 0;
     margin: 8px;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -209,3 +211,23 @@ a em {
     background: url(http://tkfile.yes24.com/imgNew/common/pf-srch-w.png)no-repeat center center;
     vertical-align: top;
 }
+
+
+.moveTopBtn {
+    animation-name: rtt;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+}
+
+.moveTopBtn {
+    display: block;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    bottom: -50px;
+    right: 0;
+    z-index: 1;
+}
+
