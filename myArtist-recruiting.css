@@ -16,7 +16,8 @@
     white-space: nowrap;
     /* 특정 상자를 넘으면 자른다. */
     overflow: hidden;
-
+    padding: 2px;
+    margin-bottom: 10px;
 }
 
 .small-5-box-textbox{
@@ -160,7 +161,7 @@ em {
 }
 
 a:-webkit-any-link {
-    color: -webkit-link;
+    
     cursor: pointer;
 }
 
@@ -189,8 +190,16 @@ a em {
     text-align: center;
     font-size: 15px;
     color: #666;
-    margin: 0 3px;
+    margin: 0 2px;
     border: 1px solid #ddd;
+}
+/* < << 방향 바꾸기 */
+.list-pagenation a.list-page-next img, .list-pagenation a.list-page-last img {
+    transform: rotate(180deg);
+}
+/* < << 방향키 조금 아래로 내리기 */
+.list-pagenation a img {
+    vertical-align: middle;
 }
 
 .list-pagenation div {
@@ -284,10 +293,7 @@ a {
     color: inherit;
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-}
+
 
 body {
     line-height: 1;
@@ -315,7 +321,7 @@ a.jcm-top {
      height: 45px;
      font-size: 40px;
      /*background-color: rgba(50,50,50,0.5);*/
-     /* background-color:#323232; */
+     background-color:#323232;
      opacity:0.5;
      filter:alpha(opacity=50);
      /*ie8 호환을 위한코드 위와 동일한 것임 호환필요없으면 한줄로 rgba적으면됨*/

@@ -107,6 +107,8 @@ li{
     white-space: nowrap;
     /* 특정 상자를 넘으면 자른다. */
     overflow: hidden;
+    padding: 2px;
+    margin-bottom: 10px;
 
 }
 
