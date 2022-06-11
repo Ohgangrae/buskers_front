@@ -138,7 +138,7 @@ li{
 } */
 
 .image-plus-box{
-    margin: 0;
+    margin: 0 12px;
 }
 
 .more-link-box{
@@ -317,6 +317,8 @@ li{
     top: 0;
     left: 50%;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .big-box-5-poster img{
@@ -331,7 +333,15 @@ a{
 
 .poster-list-1{
     padding-top: 10px;
+
 }
+.poster-list-text-box{
+    margin: 0 8px ;
+}
+.poster-title{
+    padding-top: 90px;
+}
+
 
 
 
