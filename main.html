@@ -101,8 +101,35 @@
                 </div>
             </div>
 
-            <!-- 백그라운드 이미지 -->
+    <!-- 백그라운드 이미지 -->
+    <div class="background">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 3</div> -->
+              <img src="background1.png" style="width:100%">
+            </div>
             
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 3</div> -->
+              <img src="background2.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 3</div> -->
+              <img src="background1.png" style="width:100%">
+            </div>
+            
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+        
+    </div>
 
 
             <!-- 랭킹 -->
@@ -179,6 +206,11 @@
                 </div>
                 <div class="youtube-video-box">
                     <div>
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/kXpOEzNZ8hQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <!-- <iframe id="playerFocusOn" class="focus-con-movie" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture" title="YouTube video player" width="640" height="360" src="https://www.youtube.com/embed/?enablejsapi=1&amp;origin=http%3A%2F%2Fticket.yes24.com&amp;widgetid=1">
+                        
+                        </iframe> -->
                         <!-- <iframe src="#" frameborder="0" class="youtube-video" allowfullscreen="1"
                             allow="accelerometer" width="640" height="360"></iframe> -->
                     </div>
@@ -387,5 +419,27 @@
     </div>
 
 </body>
+<!-- 백그라운드 이미지 -->
+<script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
 
 </html>
