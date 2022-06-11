@@ -293,3 +293,32 @@ body {
     line-height: 1;
     font-weight: 400;
 }
+
+/* .return-top{display:block;position:fixed;width:50px;height:50px;overflow:hidden;bottom:-50px;right:0; z-index:1}
+.return-top.on{animation-name:rtt;animation-duration: 0.5s;animation-fill-mode: forwards;}
+.return-top.on:hover img{margin-top:-50px;}
+@keyframes rtt {
+  from {bottom:-50px}
+  to {bottom:0;}
+} */
+
+
+/* 맨위로가기 버튼 */
+a.jcm-top {
+    position: fixed;
+    right: 15px;
+     bottom: 15px;
+     border-radius: 5px;
+     color: #ffffff;
+     text-align: center;
+     width: 45px;
+     height: 45px;
+     font-size: 40px;
+     /*background-color: rgba(50,50,50,0.5);*/
+     /* background-color:#323232; */
+     opacity:0.5;
+     filter:alpha(opacity=50);
+     /*ie8 호환을 위한코드 위와 동일한 것임 호환필요없으면 한줄로 rgba적으면됨*/
+     z-index: 999;
+     display: none;}
+     a.jcm-top:hover{background-color:#000}

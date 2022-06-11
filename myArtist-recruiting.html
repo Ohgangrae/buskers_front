@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="myArtist-recruiting.css">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 <body>
 
@@ -394,11 +396,17 @@
     
     </div>
     <!-- <a href="#" class="moveTopBtn"> -->
-        <a href="#" class="return-top"></a>
+        <!-- <a href="#" class="return-top"></a>
         <img src="return-top.png" alt="">
-        <!-- <div class="moveTopBtn">↑</div> -->
-    </a>
+        <div class="moveTopBtn">↑</div>
+    </a> -->
     
+
+    <!-- 맨위로 가기 이미지 버튼 시작 -->
+<a href="#" class="jcm-top hidden-xs hidden-sm">
+    <i class="icon icon-angle-up"></i>
+    <img src="return-top3.jpg" alt="">
+</a>
 
     
 </body>
@@ -415,20 +423,20 @@
 
 
 //위로 올라가는 버튼 클릭하면
-$(".return-top").on('click',function(e){
-		e.preventDefault();
-		$(window).scrollTop(0);
-	});
+// $(".return-top").on('click',function(e){
+// 		e.preventDefault();
+// 		$(window).scrollTop(0);
+// 	});
 
 //위로 올라가는 버튼 나타나게
-		if(sctop>0){
-			$(".return-top").addClass("on");
-		}else{
-			$(".return-top").removeClass("on");
-		}
+		// if(sctop>0){
+		// 	$(".return-top").addClass("on");
+		// }else{
+		// 	$(".return-top").removeClass("on");
+		// }
 
-
-
+        $( document ).ready( function() {$( window ).scroll( function() {if ( $( this ).scrollTop() > 200 ) {$( '.jcm-top' ).fadeIn();} else {$( '.jcm-top' ).fadeOut();}} );$( '.jcm-top' ).click( function() {$( 'html, body' ).animate( { scrollTop : 0 }, 400 );return false;} );} )
+        // <!-- 맨위로 가기 이미지 버튼 끝 -->
 
 
 </script>
