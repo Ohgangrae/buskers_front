@@ -5,7 +5,7 @@
 
 <h2 align="center">📚 Tech Stack 📚</h2>
 <h3 align="center">🏃Techs that I've used🚶</h3><br>
-<h3 align="center">🏇🚴🏃🚶</h3><br>
+
 <p>
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/>
  <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=SpringBoot&logoColor=white"/>
@@ -54,17 +54,11 @@
 
  Click to go😉
 
-[![Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FOhgangrae&count_bg=%2300CA78&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=&edge_flat=false)](https://hits.seeyoufarm.com)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FOhgangrae&count_bg=%2300C988&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Github&edge_flat=false)](https://hits.seeyoufarm.com)
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Ohgangrae&show_icons=true&theme=high)
 
 
-![mazandi profile](http://mazandi.herokuapp.com/api?handle={handle}&theme=warm)
-
-
-
-![mazandi profile](http://mazandi.herokuapp.com/api?Ohgangrae={Ohgangrae}&theme=dark)
-<img src="http://mazandi.herokuapp.com/api?Ohgangrae={Ohgangrae}&theme=dark"/>
 
 
 
