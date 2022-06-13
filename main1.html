@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>슬라이드</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-  <div id="slideShow">
-    <ul class="slides">
-      <li><img src="big-box-5-poster.png" alt=""></li>
-      <li><img src="big-poster.png" alt=""></li>
-      <li><img src="big-box-5-poster.png" alt=""></li>
-      <li><img src="big-poster.png" alt=""></li>
-      <li><img src="big-box-5-poster.png" alt=""></li>
-      <li><img src="big-poster.png" alt=""></li>
-    </ul>
-    <p class="controller">
-      <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 --> 
-      <span class="prev">&lang;</span> 
-      <span class="next">&rang;</span>
-    </p>
-  </div>
-  <script src="slideShow.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<button onclick="Slider1__moveNext();">버튼</button>
+
+<div class="slider slider-1">
+    <div class="slides">
+        <div class="active" style="background-color:red;"></div>
+        <div style="background-color:blue;"></div>
+        <div style="background-color:green;"></div>
+        <div style="background-color:gold;"></div>
+    </div>
+    
+    <div class="pages">
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <div class="side-btns">
+        <div></div>
+        <div></div>
+    </div>
+</div>
+</body>
 </html>
